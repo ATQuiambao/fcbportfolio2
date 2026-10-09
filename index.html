@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <title>Tolits - Educator</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style data-purpose="base-styles">
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0d0f17;
+        color: #f1f5f9;
+      }
+    </style>
+    <style data-purpose="custom-utilities">
+      /* Complementary Vibrant Accents & Border Glows */
+      .glow-border {
+        border: 1px solid rgba(139, 92, 246, 0.25);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .glow-border:hover {
+        border-color: rgba(245, 158, 11, 0.6);
+        box-shadow: 0 0 20px -5px rgba(245, 158, 11, 0.2);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-[#0d0f17] text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-900">
+    <!-- BEGIN: Navigation -->
+    <header class="sticky top-0 z-50 bg-[#0d0f17]/90 backdrop-blur-md border-b border-violet-900/30">
+      <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <!-- Brand Logo / Title -->
+        <a class="text-xl md:text-2xl font-bold tracking-tight text-white hover:text-amber-400 transition-colors" href="#"> FCB Portfolio </a>
+        <!-- Primary Navigation Links -->
+        <nav class="flex items-center space-x-6 md:space-x-10 text-sm md:text-base font-medium text-slate-300">
+          <a class="hover:text-amber-400 transition-colors" href="#about">About</a>
+          <a class="hover:text-amber-400 transition-colors" href="#projects">Projects</a>
+          <a class="hover:text-amber-400 transition-colors" href="#skills">Skills/Tools</a>
+          <a class="hover:text-amber-400 transition-colors" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <!-- END: Navigation -->
+    <main class="max-w-5xl mx-auto px-6 py-12 md:py-16 space-y-28 md:space-y-36">
+      <!-- BEGIN: Hero Section -->
+      <section class="flex flex-col md:flex-row items-center gap-10 md:gap-16 pt-6" id="hero">
+        <!-- Profile Avatar Container -->
+        <div class="w-64 h-64 md:w-80 md:h-80 flex-shrink-0 rounded-2xl overflow-hidden ring-2 ring-violet-500/40 shadow-xl shadow-violet-950/50 bg-[#161a29]">
+          <img alt="Profile image" src="images/profile.jpg" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <!-- Hero Introduction Content -->
+        <div class="flex-1 flex flex-col justify-center text-center md:text-left space-y-4">
+          <!-- EDIT: HEADING -->
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white">Angelito Quiambao</h1>
+          <!-- EDIT: JOB_TITLE -->
+          <h2 class="text-xl sm:text-2xl font-semibold text-amber-400">Educator</h2>
+          <!-- EDIT: SHORT_INTRODUCTION -->
+          <p class="text-slate-300 text-base md:text-lg leading-relaxed pt-1 max-w-xl">Dedicated educator specializing in student-centered learning, curriculum development, lesson planning, classroom management, and effective teaching strategies to support student growth and academic success.</p>
+          <!-- Action Links / Buttons -->
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
+            <!-- EDIT: HERO_BUTTON_PROJECTS -->
+            <a class="px-6 py-3 rounded-lg bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white font-medium text-sm md:text-base shadow-lg shadow-violet-900/40 transition-all" href="#projects"> View My Projects </a>
+            <!-- EDIT: HERO_BUTTON_CONTACT -->
+            <a class="px-6 py-3 rounded-lg bg-[#1a2035] hover:bg-[#232b47] text-slate-200 border border-violet-500/30 hover:border-amber-400/50 font-medium text-sm md:text-base transition-all" href="#contact"> Contact Me </a>
+          </div>
+        </div>
+      </section>
+      <!-- END: Hero Section -->
+      <!-- BEGIN: About Me Section -->
+      <section class="space-y-8 text-center" id="about">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-white">About Me</h2>
+        <!-- About Card Container -->
+        <div class="w-full bg-[#131726] border border-violet-900/40 rounded-3xl p-8 md:p-14 shadow-xl glow-border">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+            I am an educator with a background in training, lesson plan development, and classroom management. I am passionate about creating engaging learning experiences that support students’ academic growth and development. My skills include instructional planning, learner engagement, classroom organization, and educational resource development. I strive to create a positive and inclusive learning environment where students can build knowledge, develop essential skills, and reach their learning goals. Through effective teaching strategies and continuous professional development, I aim to make learning meaningful and accessible to every student.
+          </p>
+        </div>
+      </section>
+      <!-- END: About Me Section -->
+      <!-- BEGIN: Projects Section -->
+      <section class="space-y-10" id="projects">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-center text-white">Projects</h2>
+        <!-- 3-Column Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div class="flex flex-col bg-[#131726] border border-violet-900/40 rounded-2xl overflow-hidden glow-border">
+            <div class="w-full h-52 bg-slate-800 overflow-hidden">
+              <img alt="Project Cover 1" src="https://images.unsplash.com/photo-1769731738826-a51acd5bddc7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div class="p-6 flex flex-col flex-1 space-y-4">
+              <!-- EDIT: PROJECT_TITLE -->
+              <h3 class="text-xl font-bold text-white">Curriculum and Lesson Plan Development</h3>
+              <!-- EDIT: PROJECT_DESCRIPTION -->
+              <p class="text-slate-400 text-sm leading-relaxed flex-1">Developed structured lesson plans with clear learning objectives, engaging classroom activities, and instructional strategies aligned with curriculum standards to support student learning.</p>
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block self-start px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium transition-colors" href="#"> Project Link </a>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="flex flex-col bg-[#131726] border border-violet-900/40 rounded-2xl overflow-hidden glow-border">
+            <div class="w-full h-52 bg-slate-800 overflow-hidden">
+              <img alt="Project Cover 2" src="https://images.unsplash.com/photo-1606326608690-4e0281b1e588?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div class="p-6 flex flex-col flex-1 space-y-4">
+              <!-- EDIT: PROJECT_TITLE -->
+              <h3 class="text-xl font-bold text-white">Student Assessment and Evaluation</h3>
+              <!-- EDIT: PROJECT_DESCRIPTION -->
+              <p class="text-slate-400 text-sm leading-relaxed flex-1">Created quizzes, tests, rubrics, and performance-based assessments to measure student learning outcomes, evaluate academic progress, and identify areas for improvement.</p>
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block self-start px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium transition-colors" href="#"> Project Link </a>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="flex flex-col bg-[#131726] border border-violet-900/40 rounded-2xl overflow-hidden glow-border">
+            <div class="w-full h-52 bg-slate-800 overflow-hidden">
+              <img alt="Project Cover 3" src="https://plus.unsplash.com/premium_photo-1691497254534-fec9bcf9c259?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div class="p-6 flex flex-col flex-1 space-y-4">
+              <!-- EDIT: PROJECT_TITLE -->
+              <h3 class="text-xl font-bold text-white">Grading and Student Progress Monitoring</h3>
+              <!-- EDIT: PROJECT_DESCRIPTION -->
+              <p class="text-slate-400 text-sm leading-relaxed flex-1">Implemented organized grading systems to track student performance, maintain accurate academic records, and provide constructive feedback that supports continuous learning and improvement.</p>
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block self-start px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium transition-colors" href="#"> Project Link </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: Projects Section -->
+      <!-- BEGIN: Skills and Tools Section -->
+      <section class="space-y-10" id="skills">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-center text-white">Skills and Tools</h2>
+        <!-- Exactly 2 Column Cards Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <!-- Card 1: Skills -->
+          <div class="bg-[#131726] border border-violet-900/40 rounded-xl overflow-hidden glow-border">
+            <div class="py-3 px-6 bg-violet-950/40 border-b border-violet-900/40 text-center">
+              <h3 class="text-base md:text-lg font-bold text-white">Skills</h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3 text-slate-300 text-center font-medium">
+                <!-- EDIT: SKILL -->
+                <li>Lesson Plan Development</li>
+                <li>Curriculum Planning and Design</li>
+                <li>Student Assessment and Grading</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Card 2: Tools / Technologies -->
+          <div class="bg-[#131726] border border-violet-900/40 rounded-xl overflow-hidden glow-border">
+            <div class="py-3 px-6 bg-violet-950/40 border-b border-violet-900/40 text-center">
+              <h3 class="text-base md:text-lg font-bold text-white">Tools / Technologies</h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3 text-slate-300 text-center font-medium">
+                <!-- EDIT: TOOL_TECHNOLOGY -->
+                <li>Google Classroom</li>
+                <li>Google Workspace for Education</li>
+                <li>Canva for Education</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: Skills and Tools Section -->
+      <!-- BEGIN: Contact Section -->
+      <section class="space-y-8 text-center pb-8" id="contact">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-white">Contact</h2>
+        <!-- Large Contact Card -->
+        <div class="bg-[#131726] border border-violet-900/40 rounded-3xl p-10 md:p-16 max-w-3xl mx-auto space-y-4 glow-border">
+          <!-- EDIT: EMAIL -->
+          <p class="text-base md:text-lg font-medium text-slate-200">angelito.t.quiambao@gmail.com</p>
+          <!-- EDIT: CONTACT_INFO -->
+          <p class="text-base md:text-lg font-medium text-slate-200">0912346789</p>
+          <!-- EDIT: SOCIAL_LINK -->
+          <p class="text-base md:text-lg font-medium text-slate-200"><a href="https://www.facebook.com/profile.php?id=61595322297215" target="_blank">Facebook</a></p>
+        </div>
+      </section>
+      <!-- END: Contact Section -->
+    </main>
+    <!-- BEGIN: Footer -->
+    <footer class="border-t border-violet-900/30 py-8 bg-[#0a0c13] text-center">
+      <p class="text-xs md:text-sm text-slate-500 tracking-wide"> © 2026 Tolits. All rights reserved. </p>
+    </footer>
+    <!-- END: Footer -->
+  </body>
+</html>
